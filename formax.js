@@ -1,3 +1,13 @@
+/**
+ * jQuery Formax
+ * 
+ * jQuery plugin for serializing & auto-ajaxing form data
+ * 
+ * @category Forms
+ * @author Vaibhav Pandey a.k.a VPZ <vaibhavpandey at live.in>
+ * @license http://www.github.com/vaibhavpandeyvpz/formax/MIT-LICENSE.txt MIT License
+ * @link https://os.vaibhavpandey.com/formax Formax website
+ */
 (function($) {
 	$.fn.formax = function(Options) {
 		var Defaults = $.extend({
