@@ -1,0 +1,25 @@
+{
+    "author": {
+        "name": "Vaibhav Pandey",
+        "url": "https://github.com/vaibhavpandeyvpz/formax/AUTHORS.txt"
+    },
+    "bugs": "https://github.com/jquery/jquery-color/issues",
+    "dependencies": {
+        "jquery": ">=1.5"
+    },
+    "description": "jQuery plugin for serializing & auto-ajaxing form data",
+    "docs": "http://os.vaibhavpandey.com/formax#api",
+    "download": "http://code.jquery.com/#formax",
+    "homepage": "http://os.vaibhavpandey.com/formax",
+    "keywords": [
+        "ajax",
+        "form"
+    ],
+    "licenses": [{
+        "type": "MIT",
+    	"url": "https://github.com/jquery/jquery-color/blob/2.1.2/MIT-LICENSE.txt"
+    }],
+    "name": "formax",
+    "title": "jQuery Formax",
+    "version": "1.0.0"
+}
