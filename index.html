@@ -1,20 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Formax | Test Page</title>
-		<script type="text/javascript" src="jquery.js"></script>
-		<script type="text/javascript" src="formax.js"></script>
+		<title>Demo | jQuery Formax Plugin</title>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="https://github.com/vaibhavpandeyvpz/formax/blob/master/formax.min.js"></script>
+	</head>
+	<body>
+		<form action="signin.php" method="post">
+			<input type="text" name="username" value="vpz" />
+			<input type="password" name="password" value="Ry7j4o924s" />
+			<button type="submit">Signin</button>
+		</form>
 		<script type="text/javascript">
+			// Basic one-line usage
 			jQuery(document).ready(function() {
 				jQuery("form").formax();
 			});
+			// Listening to callbacks
+			jQuery(document).ready(function() {
+				jQuery("form").formax({
+					response: function(Form, Response) {
+						if (Response != null) {
+							// Successful
+						} else
+							// Failed
+					}
+				});
+			});
+			// All possible options
+			jQuery(document).ready(function() {
+				jQuery("form").formax({
+					method: "POST",
+					parameters: {
+						"ajax": true
+					},
+					response: function(Form, Response) {
+						if (Response != null) {
+							// Successful
+						} else
+							// Failed
+					},
+					url: "somescript.php"
+				});
+			});
 		</script>
-	</head>
-	<body>
-		<form action="index.html" method="post">
-			<input name="username" type="text" value="vaibhav" />
-			<input name="password" type="password" value="12345678" />
-			<input type="submit" value="Submit" />
-		</form>
 	</body>
 </html>
