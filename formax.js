@@ -11,6 +11,7 @@
 (function($) {
 	$.fn.formax = function(Options) {
 		var Defaults = $.extend({
+			before: function() {},
             method : null,
             parameters : {},
             response: function(Context, Response) {},
@@ -41,6 +42,7 @@
 				var $Method = Defaults.method != null ? Defaults.method : $Form.attr("method");
 				var $Target = Defaults.url != null ? Defaults.url : $Form.attr("action");
 			    jQuery.ajax({
+			    	beforeSend: Defaults.before(),
 			    	context: $Form,
 					data: $Data,
 					error: function() {
