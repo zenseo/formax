@@ -13,9 +13,7 @@
 		var Defaults = $.extend({
             method : null,
             parameters : {},
-            response: function(Context, Response) {
-            	console.log(Context);
-            },
+            response: function(Context, Response) {},
             url : null
         }, Options);
 		return this.each(function() {
@@ -42,7 +40,6 @@
 			    })
 				var $Method = Defaults.method != null ? Defaults.method : $Form.attr("method");
 				var $Target = Defaults.url != null ? Defaults.url : $Form.attr("action");
-				console.log($Data);
 			    jQuery.ajax({
 			    	context: $Form,
 					data: $Data,
