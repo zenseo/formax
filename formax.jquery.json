@@ -1,7 +1,7 @@
 {
     "author": {
         "name": "Vaibhav Pandey",
-        "url": "https://github.com/vaibhavpandeyvpz/formax/AUTHORS.txt"
+        "url": "https://github.com/vaibhavpandeyvpz/formax/blob/master/AUTHORS.txt"
     },
     "bugs": "https://github.com/vaibhavpandeyvpz/formax/issues",
     "dependencies": {
@@ -17,7 +17,7 @@
     ],
     "licenses": [{
         "type": "MIT",
-    	"url": "https://github.com/vaibhavpandeyvpz/formax/MIT-LICENSE.txt"
+    	"url": "https://github.com/vaibhavpandeyvpz/formax/blob/master/MIT-LICENSE.txt"
     }],
     "name": "formax",
     "title": "jQuery Formax",
